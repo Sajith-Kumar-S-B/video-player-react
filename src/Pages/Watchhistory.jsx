@@ -11,7 +11,7 @@ function Watchhistory() {
   }
   
 
-  const handleDeleteHistory = async()=>{
+  const handleDeleteHistory = async(id)=>{
     // make api call to delete
     await deleteHistory(id)
     getAllWatchHistory()

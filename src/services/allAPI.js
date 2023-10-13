@@ -53,7 +53,7 @@ export const getHistory = async ()=>{
 
 export const deleteHistory = async (id)=>{
     //    call delete http request to http://localhost:4000/history/id to delete video history from json server return response to watch history component 
-      return await commonAPI('DELETE',`${serverURL}/history${id}`,{})
+      return await commonAPI('DELETE',`${serverURL}/history/${id}`,{})
     
     }
 
