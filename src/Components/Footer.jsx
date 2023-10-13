@@ -36,7 +36,7 @@ function Footer() {
               <h4>Contact Us</h4>
               <div className='d-flex justify-content-center align-items-center gap-2 '>
                 <input className='form-control rounded' type="text" placeholder='Enter your Email' />
-              <button className='bg-primary' style={{borderRadius:'10px',padding:'5px 20px',color:"white"}}>Subscribe</button></div>
+              <button className='bg-primary' style={{borderRadius:'10px',padding:'5px 20px',color:"white"}}><i className="fa-solid fa-arrow-right fa-beat"></i></button></div>
             </div>
           </div>
           <p>Media Player Copyright@2023 Made with React</p>

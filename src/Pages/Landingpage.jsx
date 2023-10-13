@@ -1,20 +1,25 @@
 import React from 'react'
 import {Row,Col} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom';
 
 function Landingpage() {
+  const navigateByUrl = useNavigate()
+  const navigate = ()=>{
+     navigateByUrl('/home')
+  }
   return (
     <>
     <Row className='mt-5 mb-5 justify-content-center  align-items-center'>
       <Col lg={4}>
         <h3 className='mb-3'>Welcome to <span className='text-warning'>Media Player</span></h3>
         <p style={{textAlign:'justify'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore sapiente quas odio aperiam illo porro esse natus omnis rerum cumque asperiores quam, deserunt nostrum excepturi perferendis consectetur. Id, maiores!</p>
-        <button className='btn btn-primary mt-5 fw-bolder'>Get Started</button>
+        <button onClick={navigate} className='btn btn-primary mt-3 fw-bolder'>Get Started</button>
       </Col>
 
       <Col className='ps-2' lg={6}>
 
-        <img className='img-fluid ms-5 ps-5 w-100' src="https://i.pinimg.com/originals/cc/0e/d3/cc0ed34dd09adf414a19a69b460804f4.gif" alt="" />
+        <img className='img-fluid ms-3 ps-5 w-100' src="https://i.pinimg.com/originals/cc/0e/d3/cc0ed34dd09adf414a19a69b460804f4.gif" alt="" />
       </Col>
 
     </Row>
@@ -42,7 +47,7 @@ function Landingpage() {
         </Card.Body>
       </Card>
       <Card className='p-3' style={{ width: '22rem',border:'none' }}>
-        <Card.Img style={{height:'300px',width:'320px'}} variant="top" src="https://i.pinimg.com/originals/01/4e/db/014edb1a17e81b769f26637cdb69eddf.gif" />
+        <Card.Img style={{width:'100%'}} variant="top" src="https://i.pinimg.com/originals/15/1a/c1/151ac1da32a17de97d6fcac29e112a2d.gif" />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>
