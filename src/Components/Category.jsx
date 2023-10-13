@@ -110,7 +110,7 @@ function Category() {
               <Row>
                 {item?.allVideos.map((card) => (
                   <Col style={{display:'flex',justifyContent:'center',alignItems:'center'}} sm={12}>
-                    <VideoCard displayData={card}   />
+                    <VideoCard displayData={card} insideCategory={true}  />
                   </Col>
                 ))}
               </Row>
